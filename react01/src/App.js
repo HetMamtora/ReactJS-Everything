@@ -6,7 +6,7 @@ function App(){
         <div>
             {a}
             <h1 className='main'>Hello, inside App</h1>
-            <p>This is tutorial of React</p>
+            <p style={{backgroundColor: "beige", color:"blue"}}>This is tutorial of React</p>
         </div>
     )
 }
