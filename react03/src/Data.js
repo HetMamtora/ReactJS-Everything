@@ -15,7 +15,14 @@ const Data = () => {
     }
 
     const handleUpdate = (itemID) => {
-        setnData(nData.map())
+        setnData(nData.map(items => {
+            if(items.id === itemID){
+                return{name:"newName"}
+            }
+            else{
+                return items;
+            }
+        }))
     }
 
   return (
