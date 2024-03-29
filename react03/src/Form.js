@@ -1,3 +1,5 @@
+//Commented part make changes accordingly to understand the useState method
+
 import React,{useState} from 'react'
 
 const Form = () => {
