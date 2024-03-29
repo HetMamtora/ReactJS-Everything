@@ -16,6 +16,7 @@ const App = () => {
 
   return (
     <div>
+        <h1>Use State EG-1</h1>
         <h1>{count}</h1>
         <button onClick={handleClickInc}>+</button>
         <button onClick={handleClickDec}>-</button>
