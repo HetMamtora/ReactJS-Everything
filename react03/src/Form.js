@@ -15,7 +15,9 @@ const Form = () => {
     })
     
     const handleInput = (e) => {
-        console
+        const {name, value} = e.target;
+
+        setFormData({...formData,[name]:value})
     }
 
     //MULTIPLE STATE FUNCTIONS
@@ -44,17 +46,17 @@ const Form = () => {
 
         <label>
             Name: 
-            <input type='text' value={formData.name} onChange={/*handleName*/ handleInput}/>
+            <input type='text' name='name' value={formData.name} onChange={/*handleName*/ handleInput}/>
         </label>
         <br/><br />
         <label>
             Email: 
-            <input type='email' value={formData.email} onChange={/*handleEmail*/ handleInput}/>
+            <input type='email' name='email' value={formData.email} onChange={/*handleEmail*/ handleInput}/>
         </label>
         <br/><br />
         <label>
             Password: 
-            <input type='password' value={formData.password} onChange={/*handlePassword*/ handleInput}/>
+            <input type='password' name='password' value={formData.password} onChange={/*handlePassword*/ handleInput}/>
         </label>
         <br /> <br />
         <button type='submit'>Submit</button>
