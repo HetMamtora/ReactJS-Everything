@@ -4,6 +4,7 @@ import App from './App';
 import Data from './Data';
 import Form from './Form'
 import UseEffect from './UseEffect';
+import Fetch from './Fetch';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Data />
     <Form />
     <UseEffect />
+    <Fetch />
   </React.StrictMode>
 );
 

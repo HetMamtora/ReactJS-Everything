@@ -7,6 +7,11 @@ const UseEffect = () => {
 
   useEffect(()=>{
     console.log('Inside useState');
+
+    return(()=>{
+      console.log("return of use state");
+    })
+
   },[clicked,count]);
 
   return (
