@@ -5,6 +5,7 @@ import Data from './Data';
 import Form from './Form'
 import UseEffect from './UseEffect';
 import Fetch from './Fetch';
+import MultipleReturn from './MultipleReturn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <Form />
     <UseEffect />
     <Fetch />
+    <MultipleReturn />
   </React.StrictMode>
 );
 
