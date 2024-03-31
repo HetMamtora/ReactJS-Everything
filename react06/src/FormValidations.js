@@ -74,7 +74,9 @@ const FormValidations = () => {
 
   return (
     <div className='container'>
-        <h1>Form Validations</h1>
+        <h1>Form Validations</h1><br />
+        <h1>USING UseState</h1>
+        
 
         <form onSubmit={handleSubmit}>
             <div>
