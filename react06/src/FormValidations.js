@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './form.css'
+
 
 const FormValidations = () => {
 
+    const [name,setName] = useState('');
+    const [email,setEmail] = useState('');
+    const [password,setPassword] = useState('');
+    const [confirmPassword,setConfirmPassword] = useState('');
+    const [age,setAge] = useState('');
+    const [gender,setGender] = useState('');
+    const [error,setError] = useState('');
+    
     function handleSubmit(e){
         e.preventDefault();
 
@@ -16,23 +25,23 @@ const FormValidations = () => {
         <form onSubmit={handleSubmit}>
             <div>
                 <label>Name:</label>
-                <input type='text'/>
+                <input type='text' value={name} onChange={(e)=>setName(e.target.value)}/>
             </div>
             <div>
                 <label>E-Mail:</label>
-                <input type='text'/>
+                <input type='email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
             </div>
             <div>
                 <label>Password:</label>
-                <input type='password'/>
+                <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
             </div>
             <div>
                 <label>Confirm Password:</label>
-                <input type='password'/>
+                <input type='password' value={confirmPassword} onChange={(e)=>setConfirmPassword(e.target.value)}/>
             </div>
             <div>
                 <label>Age:</label>
-                <input type='text'/>
+                <input type='text' value={age} onChange={(e)=>setAge(e.target.value)}/>
             </div>
             <div>
                 <label>Gender:</label>
