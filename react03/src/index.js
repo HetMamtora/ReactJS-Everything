@@ -7,6 +7,7 @@ import UseEffect from './UseEffect';
 import Fetch from './Fetch';
 import MultipleReturn from './MultipleReturn';
 import UseReducer from './UseReducer';
+import UseReducerEx from './UseReducerEx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <Fetch />
     <MultipleReturn />
     <UseReducer />
+    <UseReducerEx />
   </React.StrictMode>
 );
 
